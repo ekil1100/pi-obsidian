@@ -1,0 +1,25 @@
+{
+  "name": "@like/pi-obsidian",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Obsidian CLI tools and a combined Wiki workflow for Pi",
+  "keywords": ["pi-package", "obsidian"],
+  "files": ["src", "skills/obd/SKILL.md", "skills/obd/references", "skills/obd/scripts/wiki_save.py", "skills/obd/scripts/vault_io.js", "README.md", "obd.example.json"],
+  "pi": { "extensions": ["./src/index.ts"], "skills": ["./skills"] },
+  "scripts": {
+    "check": "tsc --noEmit",
+    "test": "tsx --test test/*.test.ts && python3 -m unittest discover -s skills/obd/scripts -p 'test_*.py'"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "typebox": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "1.4.0",
+    "@types/node": "^24.0.0",
+    "tsx": "^4.20.0",
+    "typebox": "^1.0.0",
+    "typescript": "^5.9.0"
+  }
+}
