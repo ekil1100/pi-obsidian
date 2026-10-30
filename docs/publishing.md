@@ -4,7 +4,7 @@ The `Publish to npm` GitHub Actions workflow checks types, runs the TypeScript a
 
 ## First release
 
-The current package is `@like/pi-obsidian`. The npm account must have permission to publish under `@like`. If using a different scope, update `package.json`, regenerate `package-lock.json` with `npm install --package-lock-only`, and update the README install command before releasing.
+The current package is `@likelz/pi-obsidian`. The npm account must have permission to publish under `@likelz`. If using a different scope, update `package.json`, regenerate `package-lock.json` with `npm install --package-lock-only`, and update the README install command before releasing.
 
 For the first release, create an npm granular access token with the required write permission and permission to publish in CI (including bypassing 2FA where required by the account policy). Add it as the repository Actions secret `NPM_TOKEN`. Enter the token at the prompt rather than including it in a shell command:
 

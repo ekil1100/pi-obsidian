@@ -15,10 +15,10 @@ The skill is also discoverable automatically for Wiki search/save requests, and 
 
 Requirements: Pi 1.4.0, Python 3.10+, and an enabled Obsidian CLI on `PATH`. Keep the Obsidian desktop app running. Verify the CLI with `obsidian help`.
 
-After the first npm release, install with:
+Install from npm:
 
 ```bash
-pi install npm:@like/pi-obsidian
+pi install npm:@likelz/pi-obsidian
 ```
 
 GitHub installation is available immediately:
