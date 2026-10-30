@@ -15,7 +15,13 @@ The skill is also discoverable automatically for Wiki search/save requests, and 
 
 Requirements: Pi 1.4.0, Python 3.10+, and an enabled Obsidian CLI on `PATH`. Keep the Obsidian desktop app running. Verify the CLI with `obsidian help`.
 
-Install from GitHub:
+After the first npm release, install with:
+
+```bash
+pi install npm:@like/pi-obsidian
+```
+
+GitHub installation is available immediately:
 
 ```bash
 pi install git:github.com/ekil1100/pi-obsidian
@@ -29,7 +35,7 @@ Run `/reload` in an existing Pi session. For a temporary session that loads both
 pi -e .
 ```
 
-The package is distributed through GitHub; installation from npm is not available. It contains its own Wiki scripts and does not depend on your personal skill directories. Existing `wiki-save` and `wiki-search` skills remain installed separately; disable them in your skill configuration if you want a single automatic Wiki workflow.
+The package contains its own Wiki scripts and does not depend on your personal skill directories. Existing `wiki-save` and `wiki-search` skills remain installed separately; disable them in your skill configuration if you want a single automatic Wiki workflow.
 
 ## Configuration
 
@@ -66,3 +72,5 @@ npm test
 ```
 
 The tests exercise tool registration, command dispatch, configuration, argument handling, and the actual write script against an in-memory Obsidian API model. They do not write to a real vault.
+
+Maintainers: see [Publishing](docs/publishing.md) for GitHub Actions releases and npm authentication.

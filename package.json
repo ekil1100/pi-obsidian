@@ -1,7 +1,13 @@
 {
   "name": "@like/pi-obsidian",
   "version": "0.1.0",
-  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ekil1100/pi-obsidian.git"
+  },
+  "homepage": "https://github.com/ekil1100/pi-obsidian#readme",
+  "bugs": "https://github.com/ekil1100/pi-obsidian/issues",
+  "publishConfig": { "access": "public" },
   "type": "module",
   "description": "Obsidian CLI tools and a combined Wiki workflow for Pi",
   "keywords": ["pi-package", "obsidian"],
